@@ -1,0 +1,213 @@
+/* Custom Variable Declarations Mapping UI Palette */
+:root {
+    --primary-green: #3CB043;
+    --secondary-white: #FFFFFF;
+    --accent-blue: #2D6CDF;
+    --dark-neutral: #2F3E46;
+    --card-bg-gray: #EAEAEA;
+    --input-field-bg: #D1D8D2;
+}
+
+/* Base Body Layout Configurations */
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: var(--dark-neutral);
+    background-color: #F4F7F5;
+    scroll-behavior: smooth;
+}
+
+/* Glassmorphism Navigation Styling Engine */
+.custom-navbar {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
+    padding: 14px 0;
+}
+.logo-text-b { font-weight: 800; color: #2A7930; font-size: 1.6rem; }
+.logo-text-g { font-weight: 800; color: var(--primary-green); font-size: 1.6rem; }
+.brand-icon { color: var(--primary-green); font-size: 1.4rem; }
+
+.navbar-nav .nav-link {
+    color: var(--dark-neutral);
+    font-weight: 600;
+    padding: 6px 18px !important;
+    transition: color 0.2s ease-in-out;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: var(--primary-green) !important;
+}
+
+.btn-login {
+    border: 1px solid #999;
+    color: #444;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 6px 22px;
+    background: transparent;
+}
+.btn-register {
+    background-color: transparent;
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 6px 22px;
+    transition: all 0.3s ease;
+}
+.btn-register:hover {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+/* Hero UI Presentation Block */
+.hero-section {
+    background: linear-gradient(135deg, rgba(60,176,67,0.88) 0%, rgba(34,102,38,0.92) 100%), 
+                url('https://postimg.cc/cvHhmF7d');
+    background-size: cover;
+    background-position: center;
+    padding: 90px 0;
+    color: white;
+}
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+.hero-description {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 35px;
+    max-width: 520px;
+}
+.btn-get-started {
+    background-color: var(--secondary-white);
+    color: var(--primary-green) !important;
+    font-weight: 700;
+    padding: 12px 32px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.btn-download-app {
+    background-color: transparent;
+    color: var(--secondary-white) !important;
+    border: 2px solid var(--secondary-white);
+    font-weight: 700;
+    padding: 12px 32px;
+    border-radius: 30px;
+    transition: background 0.2s;
+}
+.btn-get-started:hover, .btn-download-app:hover {
+    transform: translateY(-2px);
+}
+.rounded-custom { border-radius: 24px; }
+
+/* Mid Section Control Bar Ribbon Styling rules */
+.green-control-bar {
+    background-color: #A4D4A8; /* Light greenish background context match */
+}
+.icon-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 auto;
+    transition: transform 0.2s ease;
+}
+.icon-circle:hover { transform: scale(1.08); }
+.c-doc { background-color: #2E7D32; }
+.c-inc { background-color: #4CAF50; }
+.c-ann { background-color: #1B5E20; }
+.c-evt { background-color: #0D3E12; }
+
+.search-box-shadow {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.filter-dropdown-w { width: 130px; }
+
+/* Functional Services Grid Cards */
+.service-display-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-display-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+.service-card-icon {
+    font-size: 2.2rem;
+}
+
+/* Community News Cards Configuration */
+.main-featured-card {
+    background-color: #E2E6E3;
+    min-height: 290px;
+}
+.featured-card-title {
+    font-size: 1.6rem;
+    color: #1F2937;
+}
+.right-stack-card {
+    background-color: #E2E6E3;
+}
+.btn-success-custom {
+    background-color: #559B5E;
+    border: none;
+    transition: background 0.2s;
+}
+.btn-success-custom:hover {
+    background-color: #417748;
+}
+
+/* Contact Block Form Containers */
+.bg-clear {
+    background-color: #A0CFA3;
+}
+.form-input-custom {
+    background-color: #CBE0CD !important;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: #222;
+}
+.form-input-custom::placeholder {
+    color: #555;
+}
+.btn-send-message {
+    background-color: #339938;
+    border: none;
+}
+
+/* Mobile Application Advertisement Ribbon */
+.app-promotion-section {
+    background: linear-gradient(135deg, #3CB043 0%, #227027 100%);
+}
+.app-mockup-frame {
+    max-height: 400px;
+}
+
+/* Main Global Layout Footer Content area styles */
+.main-footer {
+    background-color: #2A8430;
+    color: white;
+    padding: 50px 0 20px;
+}
+.main-footer h5 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.main-footer a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 2.2;
+}
+.main-footer a:hover { color: white; text-decoration: underline; }
+.footer-divider { border-top: 1px solid rgba(255,255,255,0.15); margin: 35px 0 20px; }
+.social-icons i { font-size: 1.4rem; color: white; }

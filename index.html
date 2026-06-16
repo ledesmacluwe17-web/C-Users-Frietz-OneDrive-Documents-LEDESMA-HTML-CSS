@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarangayGo - Pure HTML & CSS Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginModal" class="css-modal-overlay">
+    <div class="css-modal-card">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="fw-bold m-0">Resident Access Login</h5>
+            <a href="#close" class="btn-close text-decoration-none"></a>
+        </div>
+        <form action="#home" method="GET">
+            <div class="mb-3">
+                <label class="form-label small fw-bold">Account Email</label>
+                <input type="email" class="form-control" placeholder="resident@domain.com" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label small fw-bold">Password</label>
+                <input type="password" class="form-control" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn btn-success-custom text-white w-100 rounded-pill py-2 fw-bold">Authenticate</button>
+        </form>
+    </div>
+</div>
+
+<div id="registerModal" class="css-modal-overlay">
+    <div class="css-modal-card">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="fw-bold m-0">Create Portal Account</h5>
+            <a href="#close" class="btn-close text-decoration-none"></a>
+        </div>
+        <form action="#home" method="GET">
+            <div class="mb-3">
+                <label class="form-label small fw-bold">Full Name</label>
+                <input type="text" class="form-control" placeholder="Juan Dela Cruz" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label small fw-bold">Email Address</label>
+                <input type="email" class="form-control" placeholder="name@domain.com" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label small fw-bold">Set Safe Password</label>
+                <input type="password" class="form-control" placeholder="Minimum 6 characters" required>
+            </div>
+            <button type="submit" class="btn btn-success-custom text-white w-100 rounded-pill py-2 fw-bold">Register Account</button>
+        </form>
+    </div>
+</div>
+
+<div id="read-literacy" class="css-modal-overlay">
+    <div class="css-modal-card">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="fw-bold m-0 text-success">Financial Literacy Details</h5>
+            <a href="#updates" class="btn-close text-decoration-none"></a>
+        </div>
+        <p class="small text-secondary mt-2">This program offers extensive business mentorship, financial planning resources, and micro-grant training options for all registration compliance pools inside the sector boundaries.</p>
+    </div>
+</div>
+
+<div id="read-cleanup" class="css-modal-overlay">
+    <div class="css-modal-card">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="fw-bold m-0 text-success">Clean-Up Drive Framework</h5>
+            <a href="#updates" class="btn-close text-decoration-none"></a>
+        </div>
+        <p class="small text-secondary mt-2">Our weekly environmental safety initiative targets local biological waste management pipelines, drainage cleaning, and zone standard compost generation tracking sets.</p>
+    </div>
+</div>
+
+<div id="read-sports" class="css-modal-overlay">
+    <div class="css-modal-card">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="fw-bold m-0 text-success">Youth Sports Assembly</h5>
+            <a href="#updates" class="btn-close text-decoration-none"></a>
+        </div>
+        <p class="small text-secondary mt-2">An athletic group development module mapping neighborhood coordination values, sports health programs, and active safe zones for local youth players.</p>
+    </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+            <span class="logo-text-b">Barangay</span><span class="logo-text-g">Go</span>
+            <i class="fa-solid fa-square-poll-horizontal ms-2 brand-icon"></i>
+        </a>
+        <div class="collapse navbar-collapse d-block">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 flex-row justify-content-center gap-3">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#updates">Announcements</a></li>
+                <li class="nav-item"><a class="nav-link" href="#requests">Requests</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="d-flex gap-2">
+            <a href="#loginModal" class="btn btn-login text-decoration-none">Login</a>
+            <a href="#registerModal" class="btn btn-register text-decoration-none">Register</a>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6 hero-text-content">
+                <h1 class="hero-title">Your Barangay Service,<br>One Click Away</h1>
+                <p class="hero-description">Request documents, report concerns, receive announcements, and stay connected with your community anytime and anywhere.</p>
+                <div class="hero-buttons d-flex gap-3 flex-wrap">
+                    <a href="#requests" class="btn btn-get-started text-decoration-none">Get Started</a>
+                    <a href="#download" class="btn btn-download-app text-decoration-none"><i class="fa-solid fa-download me-2"></i>Download App</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="hero-image-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEEX15pmr-rhJiNVoxjoPKEkhjsrff0uZWcg&s" alt="Barangay Community" class="img-fluid rounded-custom shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<input type="radio" id="filter-all" name="category-toggle" checked class="d-none">
+<input type="radio" id="filter-news" name="category-toggle" class="d-none">
+<input type="radio" id="filter-events" name="category-toggle" class="d-none">
+
+<section id="services" class="services-search-container py-5">
+    <div class="container">
+        <div class="green-control-bar p-4 rounded-4 shadow-sm mb-5">
+            <div class="row align-items-center g-3">
+                <div class="col-lg-5 col-md-6 d-flex justify-content-between px-2">
+                    <label for="filter-all" class="service-icon-btn text-center">
+                        <div class="icon-circle c-doc"><i class="fa-solid fa-file-invoice"></i></div>
+                        <span class="d-block small fw-bold text-dark mt-1">Show All</span>
+                    </label>
+                    <label for="filter-news" class="service-icon-btn text-center">
+                        <div class="icon-circle c-inc"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <span class="d-block small fw-bold text-dark mt-1">News Only</span>
+                    </label>
+                    <label for="filter-events" class="service-icon-btn text-center">
+                        <div class="icon-circle c-ann"><i class="fa-solid fa-calendar-check"></i></div>
+                        <span class="d-block small fw-bold text-dark mt-1">Events Only</span>
+                    </label>
+                </div>
+                <div class="col-lg-7 col-md-6 text-end">
+                    <span class="small fw-bold text-dark-emphasis p-2 rounded bg-white-50 shadow-sm">
+                        💡 Click icons above to filter updates instantly below!
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card service-display-card h-100 p-4 text-center border-0 rounded-4 shadow-sm">
+                    <i class="fa-solid fa-file-shield service-card-icon mb-3 text-success"></i>
+                    <h5 class="fw-bold">Barangay Documents</h5>
+                    <p class="text-muted small">Apply online for certificates of residency, clearances, and indigency forms directly.</p>
+                    <a href="#requests" class="btn btn-outline-success btn-sm mt-auto rounded-pill text-decoration-none">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-display-card h-100 p-4 text-center border-0 rounded-4 shadow-sm">
+                    <i class="fa-solid fa-shield-cat mb-3 service-card-icon text-success"></i>
+                    <h5 class="fw-bold">Incident Reporting</h5>
+                    <p class="text-muted small">Submit neighborhood safety concerns directly to officials through the terminal below.</p>
+                    <a href="#reporting" class="btn btn-outline-success btn-sm mt-auto rounded-pill text-decoration-none">Submit Report</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-display-card h-100 p-4 text-center border-0 rounded-4 shadow-sm">
+                    <i class="fa-solid fa-tower-broadcast mb-3 service-card-icon text-success"></i>
+                    <h5 class="fw-bold">Community Alerts</h5>
+                    <p class="text-muted small">Keep track of schedules, health protocols, and general block updates live.</p>
+                    <a href="#updates" class="btn btn-outline-success btn-sm mt-auto rounded-pill text-decoration-none">View Board</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="updates" class="community-updates-section py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center section-main-title mb-5 fw-bold">Community Updates</h2>
+        <div class="row g-4">
+            <div class="col-lg-7 block-news">
+                <div class="card main-featured-card h-100 border-0 rounded-4 p-4 shadow-sm d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="featured-card-title fw-bold">WE PROVIDE COMPREHENSIVE FINANCIAL LITERACY AND BUSINESS SKILLS DEVELOPMENT FOR LOCAL ENTREPRENEURS</h3>
+                        <p class="mt-3 text-secondary">Empowering community households through foundational fiscal training programs, strategic livelihood resources, and modern micro-business expansion toolkits.</p>
+                    </div>
+                    <div class="mt-4">
+                        <a href="#read-literacy" class="btn btn-success-custom px-4 py-2 rounded-pill text-white text-decoration-none">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 d-flex flex-column gap-4">
+                <div class="card right-stack-card border-0 rounded-4 p-4 shadow-sm block-events">
+                    <span class="update-date text-muted d-block mb-1">June 14, 2026</span>
+                    <h5 class="fw-bold text-dark mb-2">Clean-Up Drive</h5>
+                    <p class="text-secondary small mb-3">A successful day for our Barangay families, with everyone pitching in for a cleaner, greener community environment.</p>
+                    <div class="text-end">
+                        <a href="#read-cleanup" class="btn btn-success-custom btn-sm px-4 rounded-pill text-white text-decoration-none">Read More</a>
+                    </div>
+                </div>
+                <div class="card right-stack-card border-0 rounded-4 p-4 shadow-sm block-events">
+                    <span class="update-date text-muted d-block mb-1">June 15, 2026</span>
+                    <h5 class="fw-bold text-dark mb-2">Youth Sports Event</h5>
+                    <p class="text-secondary small mb-3">Our youth soccer tournament was great event with many participants, showcasing a great and friendly competition...</p>
+                    <div class="text-end">
+                        <a href="#read-sports" class="btn btn-success-custom btn-sm px-4 rounded-pill text-white text-decoration-none">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="requests" class="request-form-section py-5 bg-light">
+    <div class="container" style="max-width: 750px;">
+        <div class="card border-0 rounded-4 p-4 p-md-5 shadow-sm">
+            <h3 class="fw-bold text-center mb-2"><i class="fa-solid fa-folder-plus text-success me-2"></i>Request Documents</h3>
+            <p class="text-center text-muted small mb-4">Complete your layout form details below to submit data parameters seamlessly.</p>
+            
+            <form action="#docConfirmBox" method="GET">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label small fw-bold">Full Name</label>
+                        <input type="text" class="form-control rounded-3" placeholder="Juan Dela Cruz" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label small fw-bold">Document Type</label>
+                        <select class="form-select rounded-3">
+                            <option>Barangay Clearance</option>
+                            <option>Certificate of Residency</option>
+                            <option>Certificate of Indigency</option>
+                            <option>Business Clearance</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label small fw-bold">Contact Number</label>
+                        <input type="tel" class="form-control rounded-3" placeholder="+63 912 345 6789" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label small fw-bold">Email Address</label>
+                        <input type="email" class="form-control rounded-3" placeholder="juan@gmail.com" required>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label small fw-bold">Purpose</label>
+                        <textarea class="form-control rounded-3" rows="3" placeholder="State reasons for application compliance checking..." required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success-custom w-100 text-white fw-bold rounded-pill mt-4 py-2">Submit Document Request</button>
+            </form>
+
+            <div id="docConfirmBox" class="css-alert-box mt-4 p-3 bg-success-subtle border border-success rounded-3">
+                <h6 class="fw-bold text-success-emphasis mb-1"><i class="fa-solid fa-circle-check me-2"></i>Application Logged Successfully!</h6>
+                <p class="small text-success-emphasis mb-0">Your request record has been parsed. Reference Code: <strong class="text-dark">BRGY-2026-X942</strong>. <a href="#requests" class="text-success fw-bold ms-2">Clear Alert</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="reporting" class="incident-reporting-section py-5 bg-white">
+    <div class="container" style="max-width: 750px;">
+        <div class="card border-0 rounded-4 p-4 p-md-5 shadow-sm bg-light">
+            <h3 class="fw-bold text-center mb-2"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>Incident Reporting Desk</h3>
+            <p class="text-center text-muted small mb-4">Lodge public alerts or regional security items directly into public interface streams.</p>
+            
+            <form action="#incConfirmBox" method="GET">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label small fw-bold">Reporter Full Name</label>
+                        <input type="text" class="form-control rounded-3" placeholder="Confidential / Full Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label small fw-bold">Incident Category</label>
+                        <select class="form-select rounded-3">
+                            <option>Traffic Obstruction</option>
+                            <option>Waste / Environmental Care</option>
+                            <option>Streetlight Malfunction</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label small fw-bold">Location of Occurrence</label>
+                        <input type="text" class="form-control rounded-3" placeholder="Street name, landmark details..." required>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label small fw-bold">Comprehensive Description</label>
+                        <textarea class="form-control rounded-3" rows="3" placeholder="Provide event matrix particulars..." required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-warning w-100 fw-bold rounded-pill mt-4 py-2 text-dark">Lodge Incident Ticket</button>
+            </form>
+
+            <div id="incConfirmBox" class="css-alert-box mt-4 p-3 bg-warning-subtle border border-warning rounded-3">
+                <h6 class="fw-bold text-warning-emphasis mb-1"><i class="fa-solid fa-triangle-exclamation me-2"></i>Incident Ticket Registered</h6>
+                <p class="small text-warning-emphasis mb-0">System Node ID assigned: <strong class="text-dark">TKT-616-9351</strong>. Status: <span class="badge bg-secondary">Pending Processing</span>. <a href="#reporting" class="text-warning-emphasis fw-bold ms-2">Dismiss</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="contact-form-container p-4 p-md-5 rounded-4 shadow-sm bg-clear">
+                    <form action="#home">
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-input-custom" placeholder="Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-input-custom" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control form-input-custom" rows="4" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-send-message w-100 py-2.5 rounded-pill text-white fw-bold">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 contact-info-panel d-flex flex-sm-row flex-column gap-4">
+                <div class="map-mock-container rounded-3 overflow-hidden shadow-sm border bg-light mx-auto" style="width:150px; height:150px; min-width:150px;">
+                    <iframe src="http://googleusercontent.com/maps.google.com/3" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="info-content-details text-sm-start text-center text-dark">
+                    <h4 class="fw-bold mb-3 text-dark">Contact</h4>
+                    <p class="mb-2"><i class="fa-solid fa-location-dot me-2 text-success"></i><strong>Barangay Address</strong><br>Poblacion District,<br>Juan Luna Street, Barangay San Isidro, Cebu City, Cebu 6000, Philippines</p>
+                    <p class="mb-2"><i class="fa-solid fa-phone me-2 text-success"></i><strong>Contact Number</strong><br>(+63) a912-345-6789<br>Telephone: (032) 555-2026</p>
+                    <p class="mb-0"><i class="fa-solid fa-envelope me-2 text-success"></i><strong>Email</strong><br><a href="mailto:info@barangaygo.ph" class="text-decoration-none text-dark fw-semibold">info@barangaygo.ph</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="download" class="app-promotion-section py-5 text-white">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7 text-content-promo">
+                <h2 class="fw-bold fs-1 mb-3">Take BarangayGo<br>Everywhere</h2>
+                <p class="mb-4 text-white-50 fs-5">Access services and more platform, receive wish time qualities and manage your requests directly from your smartphone.</p>
+                <div class="d-flex flex-wrap gap-3 align-items-center mb-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" height="42">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" height="42">
+                </div>
+                <div class="qr-code-wrapper d-flex align-items-center gap-3">
+                    <div class="qr-bg p-2 bg-white rounded-3 d-inline-block shadow-sm">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://barangaygo.ph" alt="QR Code" width="80" height="80">
+                    </div>
+                    <span class="small text-white-50 fw-semibold">Download the<br>BarangayGo App Now</span>
+                </div>
+            </div>
+            <div class="col-lg-5 text-center">
+                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=300&auto=format&fit=crop" alt="Mobile App" class="img-fluid app-mockup-frame shadow-lg rounded-5 border-4 border-dark">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="container text-center text-md-start">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#requests">Requests</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Privacy & Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Social Media Links</h5>
+                <div class="social-icons">
+                    <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="text-center pb-2">
+            <p class="mb-0 text-white-50 small">© 2026 BarangayGo. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
